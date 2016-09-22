@@ -6,7 +6,13 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
   response.send('Hello World!')
-})
+});
+
+app.get('/items', function(request, response) {
+
+  var query = request.query.id;
+  response.status(200).send({description:'Goodies',price:10});
+});
 
 app.listen(app.get('port'), function() {
   console.log("Node app is running at localhost:" + app.get('port'))
