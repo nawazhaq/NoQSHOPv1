@@ -11,7 +11,7 @@ app.get('/', function(request, response) {
 app.get('/items', function(request, response) {
 
   var query = request.query.id;
-  response.status(200).send({description:'Goodies',price:10});
+  response.status(200).send([{description:'Goodies',price:10},{description:'IceCream',price:5},{description:'Milk',price:2}]);
 });
 
 app.listen(app.get('port'), function() {
