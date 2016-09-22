@@ -1,5 +1,5 @@
 {
-  "name": "node-js-sample",
+  "name": "NoQSHOP",
   "version": "0.2.0",
   "description": "A sample Node.js app using Express 4",
   "main": "index.js",
@@ -7,7 +7,8 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+     "request-promise":"0.4.3"
   },
   "engines": {
     "node": "4.0.0"
@@ -21,9 +22,9 @@
     "heroku",
     "express"
   ],
-  "author": "Mark Pundsack",
+  "author": "nasheikh",
   "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
-  "license": "MIT"
+    "pthombare"
+  ]
+
 }
